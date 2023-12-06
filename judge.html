@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serverless Judge</title>
+    <script type="module" src="./lib/runner.js"></script>
+    <script type="module" src="./lib/judge.js"></script>
+	<script type="module">
+      async function run() {
+        const solution_src = document.querySelector('#solution_src').value;
+		window.judgeSolution(solution_src, window.manifest).then(
+		  result => document.querySelector('#verdict').value = JSON.stringify(result)
+		);
+      }
+	  const manifest = new URLSearchParams(window.location.search).get('manifest');
+	  fetch(manifest)
+	  .then(res => res.json())
+	  .then(out => { window.manifest = out; })
+      .catch(err => { throw err });
+      document.querySelector('#run').addEventListener('click', async() => { await run(); });
+    </script>
+  </head>
+  <body>
+    <h1>Serverless Judge</h1>
+    Source code:<br>
+    <textarea id="solution_src" cols="100" rows="10"></textarea><br>
+    <button id="run">Judge it!</button><br><br>
+    Judge result:<br>
+    <textarea id="verdict" cols="100" rows="10" readonly></textarea><br><br>
+  </body>
+</html>
