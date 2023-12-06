@@ -11,7 +11,7 @@
     },
     "solver": {
         "name": "solution.py",
-        "language": "python3",
+        "language": "python3"
     },
     "tests": [
         {
