@@ -1,0 +1,23 @@
+{
+  "name": "rustpython_wasm",
+  "collaborators": [
+    "RustPython Team"
+  ],
+  "description": "A Python-3 (CPython >= 3.5.0) Interpreter written in Rust, compiled to WASM",
+  "version": "0.3.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RustPython/RustPython/tree/main/wasm/lib"
+  },
+  "files": [
+    "rustpython_wasm_bg.wasm",
+    "rustpython_wasm.js",
+    "rustpython_wasm.d.ts"
+  ],
+  "module": "rustpython_wasm.js",
+  "types": "rustpython_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
