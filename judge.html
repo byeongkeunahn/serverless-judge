@@ -6,8 +6,9 @@
     <script type="module" src="./lib/judge.js"></script>
 	<script type="module">
       async function run() {
+        const language = document.querySelector('#language').value;
         const solution_src = document.querySelector('#solution_src').value;
-		window.judgeSolution(solution_src, window.manifest).then(
+		window.judgeSolution(language, solution_src, window.manifest).then(
 		  result => document.querySelector('#verdict').value = JSON.stringify(result)
 		);
       }
@@ -21,6 +22,10 @@
   </head>
   <body>
     <h1>Serverless Judge</h1>
+    Language:
+	<select id="language">
+      <option value="python3">Python 3</option>
+    </select><br>
     Source code:<br>
     <textarea id="solution_src" cols="100" rows="10"></textarea><br>
     <button id="run">Judge it!</button><br><br>

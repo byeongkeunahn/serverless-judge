@@ -5,10 +5,11 @@
     <script type="module" src="./lib/runner.js"></script>
 	<script type="module">
       async function run() {
+        const language = document.querySelector('#language').value;
         const solution_src = document.querySelector('#solution_src').value;
         const stdin_str = document.querySelector('#stdin').value;
         const stdin = new TextEncoder('utf8').encode(stdin_str);
-		window.runSolution(solution_src, stdin).then(
+		window.runSolution(language, solution_src, stdin).then(
 		  result => document.querySelector('#stdout').value = result
 		);
       }
@@ -17,6 +18,10 @@
   </head>
   <body>
     <h1>Serverless Judge</h1>
+    Language:
+	<select id="language">
+      <option value="python3">Python 3</option>
+    </select><br>
     Source code:<br>
     <textarea id="solution_src" cols="100" rows="10"></textarea><br>
     <button id="run">Run program</button><br><br>
