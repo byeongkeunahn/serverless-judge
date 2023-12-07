@@ -15,24 +15,10 @@
     },
     "tests": [
         {
-            "type": "static",
-            "path": "database/boj/2839/data_ex_1"
-        },
-        {
-            "type": "static",
-            "path": "database/boj/2839/data_ex_2"
-        },
-        {
-            "type": "static",
-            "path": "database/boj/2839/data_ex_3"
-        },
-        {
-            "type": "static",
-            "path": "database/boj/2839/data_ex_4"
-        },
-        {
-            "type": "static",
-            "path": "database/boj/2839/data_ex_5"
+            "type": "stress",
+            "path": "database/boj/2839/gen.py",
+            "language": "python3",
+            "max_try_count": 4998
         }
     ]
 }

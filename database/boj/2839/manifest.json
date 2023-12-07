@@ -15,8 +15,10 @@
     },
     "tests": [
         {
-            "type": "static",
-            "auto-discovery": true
+            "type": "stress",
+            "path": "gen.py",
+            "language": "python3",
+            "max_try_count": 4998
         }
     ]
 }
