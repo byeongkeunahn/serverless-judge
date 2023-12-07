@@ -19,7 +19,7 @@
             "auto-discovery": true
         },
         {
-            "type": "dynamic",
+            "type": "stress",
             "path": "gen_1.py",
             "language": "python3",
             "max_try_count": 30
