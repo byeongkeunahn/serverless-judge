@@ -6,6 +6,7 @@
     <script type="module" src="./lib/judge.js"></script>
 	<script type="module">
       async function run() {
+        document.querySelector('#verdict').value = "RUNNING. PLEASE WAIT...\n\n" + document.querySelector('#verdict').value;
         const language = document.querySelector('#language').value;
         const solution_src = document.querySelector('#solution_src').value;
 		window.judgeSolution(language, solution_src, window.manifest).then(
