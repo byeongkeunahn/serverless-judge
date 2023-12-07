@@ -17,6 +17,12 @@
         {
             "type": "static",
             "auto-discovery": true
+        },
+        {
+            "type": "dynamic",
+            "path": "gen_1.py",
+            "language": "python3",
+            "max_try_count": 30
         }
     ]
 }

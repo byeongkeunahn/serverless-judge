@@ -33,6 +33,12 @@
         {
             "type": "static",
             "path": "database/boj/1157/data_131340"
+        },
+        {
+            "type": "dynamic",
+            "path": "database/boj/1157/gen_1.py",
+            "language": "python3",
+            "max_try_count": 30
         }
     ]
 }
