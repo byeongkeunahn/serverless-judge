@@ -19,6 +19,12 @@
             "auto-discovery": true
         },
         {
+            "type": "dynamic",
+            "path": "gen_rle.py",
+            "language": "python3",
+            "argv": ["A", 300, "B", 300]
+        },
+        {
             "type": "stress",
             "path": "gen_1.py",
             "language": "python3",
