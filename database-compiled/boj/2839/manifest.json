@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "src": "https://www.acmicpc.net/problem/2839"
+    },
+    "cfg": {
+        "time-limit": 1000,
+        "memory-limit": 0
+    },
+    "judge": {
+        "type": "standard"
+    },
+    "solver": {
+        "name": "database/boj/2839/solution.py",
+        "language": "python3"
+    },
+    "tests": [
+        {
+            "type": "static",
+            "path": "database/boj/2839/data_ex_1"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/2839/data_ex_2"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/2839/data_ex_3"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/2839/data_ex_4"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/2839/data_ex_5"
+        }
+    ]
+}

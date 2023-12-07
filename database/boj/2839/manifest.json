@@ -1,0 +1,22 @@
+{
+    "metadata": {
+        "src": "https://www.acmicpc.net/problem/2839"
+    },
+    "cfg": {
+        "time-limit": 1000,
+        "memory-limit": 0
+    },
+    "judge": {
+        "type": "standard"
+    },
+    "solver": {
+        "name": "solution.py",
+        "language": "python3"
+    },
+    "tests": [
+        {
+            "type": "static",
+            "auto-discovery": true
+        }
+    ]
+}
