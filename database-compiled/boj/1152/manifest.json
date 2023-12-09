@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "src": "https://www.acmicpc.net/problem/1152"
+    },
+    "cfg": {
+        "time-limit": 1000,
+        "memory-limit": 0
+    },
+    "judge": {
+        "type": "standard"
+    },
+    "solver": {
+        "name": "database/boj/1152/solution.py",
+        "language": "python3"
+    },
+    "tests": [
+        {
+            "type": "static",
+            "path": "database/boj/1152/data_1"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/1152/data_2"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/1152/data_3"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/1152/data_4"
+        },
+        {
+            "type": "static",
+            "path": "database/boj/1152/data_5"
+        },
+        {
+            "type": "stress",
+            "path": "database/boj/1152/gen.py",
+            "language": "python3",
+            "argv": [
+                8
+            ],
+            "max_try_count": 200
+        },
+        {
+            "type": "stress",
+            "path": "database/boj/1152/gen.py",
+            "language": "python3",
+            "argv": [
+                100
+            ],
+            "max_try_count": 50
+        },
+        {
+            "type": "stress",
+            "path": "database/boj/1152/gen.py",
+            "language": "python3",
+            "argv": [
+                1000000
+            ],
+            "max_try_count": 10
+        }
+    ]
+}
