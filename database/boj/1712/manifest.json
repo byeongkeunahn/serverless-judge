@@ -1,0 +1,28 @@
+{
+    "metadata": {
+        "src": "https://www.acmicpc.net/problem/1712"
+    },
+    "cfg": {
+        "time-limit": 1000,
+        "memory-limit": 0
+    },
+    "judge": {
+        "type": "standard"
+    },
+    "solver": {
+        "name": "solution.py",
+        "language": "python3"
+    },
+    "tests": [
+        {
+            "type": "static",
+            "auto-discovery": true
+        },
+        {
+            "type": "stress",
+            "path": "gen.py",
+            "language": "python3",
+            "max_try_count": 200
+        }
+    ]
+}
