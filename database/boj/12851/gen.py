@@ -1,4 +1,4 @@
 import random
-N = random.randint(0, 100_001)
-K = random.randint(0, 100_001)
+N = random.randint(0, 100_000)
+K = random.randint(0, 100_000)
 print(N, K)

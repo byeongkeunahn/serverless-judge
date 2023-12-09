@@ -9,7 +9,7 @@ def rand_interval_exp(min_val, max_val):
     return out
 
 MIN, MAX = 1, 21 * 10**8
-t = random.randint(0, 10)
+t = random.randint(0, 9)
 if t < 3:
     MAX = 10**4
 
@@ -17,7 +17,7 @@ A = rand_interval_exp(MIN, MAX)
 B = rand_interval_exp(MIN, MAX)
 C = rand_interval_exp(MIN, MAX)
 
-test_type = random.randint(0, 6)
+test_type = random.randint(0, 5)
 if test_type == 0:
     pass
 elif test_type == 1:
