@@ -50,6 +50,28 @@
             ]
         },
         {
+            "type": "dynamic",
+            "path": "database/boj/1157/gen_rle.py",
+            "language": "python3",
+            "argv": [
+                "A",
+                126,
+                "B",
+                382
+            ]
+        },
+        {
+            "type": "dynamic",
+            "path": "database/boj/1157/gen_rle.py",
+            "language": "python3",
+            "argv": [
+                "A",
+                255,
+                "B",
+                127
+            ]
+        },
+        {
             "type": "stress",
             "path": "database/boj/1157/gen_1.py",
             "language": "python3",

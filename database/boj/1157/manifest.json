@@ -25,6 +25,18 @@
             "argv": ["A", 300, "B", 300]
         },
         {
+            "type": "dynamic",
+            "path": "gen_rle.py",
+            "language": "python3",
+            "argv": ["A", 126, "B", 382]
+        },
+        {
+            "type": "dynamic",
+            "path": "gen_rle.py",
+            "language": "python3",
+            "argv": ["A", 255, "B", 127]
+        },
+        {
             "type": "stress",
             "path": "gen_1.py",
             "language": "python3",
