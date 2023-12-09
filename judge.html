@@ -27,7 +27,7 @@
               if (id in result) {
                 var value = result[id];
                 if (id == "verdict") {
-                  value = value ? "PASS\n" : "FAIL\n";
+                  value = value ? "PASS\n\nNote: Although all tests have passed, the above source code may still have undetected bugs. If you believe our tests are weak, please file an issue on our GitHub repository.\n" : "FAIL\n";
                 }
                 if (value[value.length - 1] != '\n') {
                   value += "\n";
