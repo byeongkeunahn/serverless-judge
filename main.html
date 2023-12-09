@@ -2,11 +2,19 @@
 <html>
   <head>
     <title>Serverless Judge</title>
+    <script src="lib/codemirror/codemirror.min.js"></script>
+    <script src="lib/codemirror/python.min.js"></script>
+    <script src="lib/codemirror/clike.min.js"></script>
+    <link rel="stylesheet" href="lib/codemirror/codemirror.min.css">
+    <style>
+      .CodeMirror { border: 2px solid orange }
+      .CodeMirror-focused { border: 2px solid blue }
+    </style>
     <script type="module" src="./lib/runner.js"></script>
 	<script type="module">
       async function run() {
         const language = document.querySelector('#language').value;
-        const solution_src = document.querySelector('#solution_src').value;
+        const solution_src = myCodeMirror.getValue();
         const stdin_str = document.querySelector('#stdin').value;
         const stdin = new TextEncoder('utf8').encode(stdin_str);
 		window.runSolution(language, solution_src, stdin).then(
@@ -14,6 +22,23 @@
 		);
       }
       document.querySelector('#run').addEventListener('click', async() => { await run(); });
+    </script>
+    <script>
+      var myCodeMirror;
+      window.onload = function() {
+        myCodeMirror = CodeMirror.fromTextArea(
+          document.querySelector('#solution_src'), {
+            mode: "python",
+            lineNumbers: true,
+            content: document.querySelector('#solution_src').value
+          }
+        );
+        document.querySelector('#language').onchange = function() {
+          const language = document.querySelector('#language').value;
+          const mode = language == "python3" ? "python" : "text/x-c++src";
+          myCodeMirror.setOption("mode", mode);
+        };
+      };
     </script>
   </head>
   <body>
