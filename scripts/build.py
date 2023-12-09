@@ -4,7 +4,7 @@ import os
 import shutil
 
 def build(src, dst):
-    print(src, dst)
+    print("{0} -> {1}".format(src, dst))
     manifest_path = "/".join([src, "manifest.json"])
     with open(manifest_path, 'r') as f:
         manifest = json.load(f)
