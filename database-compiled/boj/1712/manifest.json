@@ -28,6 +28,10 @@
         },
         {
             "type": "static",
+            "path": "database/boj/1712/data_28870"
+        },
+        {
+            "type": "static",
             "path": "database/boj/1712/data_87288"
         },
         {
